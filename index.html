@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Devdance</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <!-- Add a button to trigger the popup -->
+<!-- Add a button to trigger the popup -->
+<nav>
+    <div class="navbar">
+      <div class="left-side">
+        <a href="#" class="logo">Devdance</a>
+      </div>
+      <div class="right-side">
+        <ul class="nav-items">
+          <li><a href="#" id="apply-button">Apply</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>        
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Add a container for the popup -->
+  <div id="apply-popup" class="popup">
+    <!-- Add a close button to the popup -->
+    <button id="close-button" class="close-button">&times;</button>
+    <div class="popup-content">
+      <!-- Add form elements for user input -->
+      <form id="apply-form">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name-input" required><br>
+        <label for="email">Email:</label><br>
+        <input type="text" id="contact-input" required><br>
+        <label for="age">Age:</label><br>
+        <input type="text" id="age-input" required><br>
+        <label for="job">What service do you want to offer:</label><br>
+        <input type="text" length="50" id="skills-input" required><br>
+        <br>
+        <input id="submit-button" type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+  
+  
+      
+      
+    <h1>Welcome to Devdance</h1>
+    <p>The World's leading developer marketplace</p>
+    <!-- Introduction section -->
+
+    <div class="intro-section">
+        <div class="intro-card">
+          <h2 class="intro-header">Welcome to Devdance</h2>
+          <p>We are a platform connecting businesses with skilled freelancers in a variety of fields. Browse our current job listings and apply to be hired, or create a profile and let businesses come to you.</p>
+          <h2 class="intro-header">What do we do?</h2>
+            <p class="intro-text">We are a platform that connects freelancers with job opportunities in the tech industry. If you are a freelancer looking for work, you can create a profile and apply for job listings on our site. If you are a company looking to hire freelancers, you can post job listings and browse through profiles to find the perfect candidate for your project.</p>
+            <p class="intro-text">To start, you can navigate through the site using the navbar at the top of the page. You can click on the "Apply" button in the navbar to create a profile and apply for a job, or you can click on the "Job Listings" button to browse through available opportunities. If you have any questions or need assistance, you can click on the "Contact Support" button to get in touch with us.</p>
+        </div>
+      </div>
+    <center>
+      <div class="card-container">
+        <div class="card">
+          <img src="developer1.jpg" alt="A developer working at a computer">
+          <h3>Jeffery Long</h3>
+          <p>Expert on CSS</p>
+        </div>
+        <div class="card">
+          <img src="developer2.jpg" alt="A developer working on a laptop">
+          <h3>Masivo Volcano</h3>
+          <p>5+ years with Unity</p>
+        </div>
+        <div class="card">
+          <img src="developer3.jpg" alt="A developer working on a whiteboard">
+          <h3>Jaquivani Flats</h3>
+          <p>Python developer</p>
+        </div>
+      </div>
+    </center>
+      
+    <h2>Current Job Listings</h2>
+    <ul id="job-listings"></ul>
+
+    <h2>Freelancers Looking to Be Hired</h2>
+    <ul id="freelancers-list"></ul>
+
+    <script src="script.js"></script>
+  </body>
+</html>

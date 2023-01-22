@@ -1,0 +1,305 @@
+body {  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color:#fff;
+    font-family: sans-serif;
+  }
+  
+  h1 {
+    font-size: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #d23669;
+    margin: 0;
+    letter-spacing: 4px;
+  }
+  
+  ul {
+    width: 80%;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  li {
+    width: 30%;
+    margin-bottom: 20px;
+  }
+  
+
+
+  .job-listing {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    transition: background-color 0.5s ease;
+  }
+  
+  .job-listing h3 {
+    font-size: 24px;
+    color: #333;
+    margin: 0 0 10px;
+  }
+  
+  .job-listing p {
+    font-size: 18px;
+    color: #555;
+    margin: 0;
+  }
+  
+  .job-listing a {
+    /* button styles */
+  }
+  
+  .job-listing a:hover {
+    /* hover styles */
+  }
+  
+  .job-listing:hover {
+    background-color: #f8f8f8;
+  }
+  
+
+a {
+display: inline-block;
+text-decoration: none;
+font-weight: bold;
+color: #d23669;
+background-color: #fff;
+padding: 10px 20px;
+border-radius: 4px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+a:hover {
+background-color: #d23669;
+color: #fff;
+}
+
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #fff; /* Dark grey */
+    color: #fff; /* White text */
+    width: 100%; /* Extend navbar to full width of page */
+}
+  
+.navbar {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+  
+.left-side {
+    display: flex;
+    align-items: center;
+}
+  
+.logo {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #d23669; /* White text */
+    text-decoration: none;
+}
+  
+.right-side {
+    display: flex;
+    
+}
+  
+.right-side .nav-items {
+    display: flex; /* Make .nav-items a flex item */
+}
+  
+.nav-items {
+    width: 100%; /* Make .nav-items take up all available width */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-items li {
+    margin: 0 1rem;
+    flex: 1;
+}
+
+.nav-items a {
+    color: #d23669; /* White text */
+    text-decoration: none;
+}
+  
+.nav-items a:hover {
+    color: #fff; /* Light blue */
+}
+
+/* Add some basic styles for the popup */
+/* Style the popup container */
+.popup {
+    display: none; /* Hide the popup by default */
+    position: absolute; /* Use absolute positioning to place the popup */
+    left: 50%; /* Position the popup horizontally centered on the screen */
+    top: 50%; /* Position the popup vertically centered on the screen */
+    transform: translate(-50%, -50%); /* Translate the popup back up and left to its original position */
+    width: 300px; /* Set a fixed width for the popup */
+    height: auto; /* Set a variable height for the popup */
+    background-color: #fff; /* White background */
+    border-radius: 4px; /* Round the corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a drop shadow */
+    z-index: 1; /* Set a high z-index to ensure the popup appears above other elements */
+    transition: all 0.5s ease; /* Add a transition to the popup */
+  }
+  
+  /* Style the close button */
+  .close-button {
+    position: absolute; /* Use absolute positioning */
+    top: 5px; /* Position the close button 5px from the top of the popup */
+    right: 5px; /* Position the close button 5px from the right of the popup */
+    font-size: 18px; /* Increase the size of the close button */
+    color: #555; /* Dark grey color */
+    cursor: pointer; /* Add a cursor to the button */
+    transition: color 0.5s ease; /* Add a transition to the button */
+  }
+  
+  .close-button:hover {
+    color: #d23669; /* Light red color */
+  }
+  
+  /* Style the form elements */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  form label {
+    font-size: 18px;
+    color: #555;
+    margin: 10px 0;
+  }
+  
+  form input[type="text"] {
+    font-size: 16px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 10px 0;
+    width: 100%;
+    
+  }
+  
+  form input[type="submit"] {
+    font-size: 16px;
+    background-color: #d23669;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #b8335e;
+  }
+  
+  .freelancer-card {
+    /* Use the same styles as the job listings cards */
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    transition: background-color 0.5s ease;
+  }
+  
+  .freelancer-card h3 {
+    font-size: 24px;
+    color: #333;
+    margin: 0 0 10px;
+  }
+  
+  .freelancer-card p {
+    font-size: 18px;
+    color: #555;
+    margin: 0;
+  }
+  
+  .freelancer-card a {
+    /* Use the same styles as the job listings buttons */
+    display: inline-block;
+    text-decoration: none;
+  }
+  
+  .intro-section {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 4px;
+  }
+  
+  .intro-header {
+    color: #d23669;
+    font-size: 24px;
+    margin: 0 0 10px;
+  }
+  
+  .intro-text {
+    font-size: 18px;
+    color: #555;
+    margin: 0;
+  }
+  
+  .card {
+    text-align: center;
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 25%;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    transition: background-color 0.5s ease;
+    }
+    
+    .card img {
+    align-items: center;
+    width: 100%;
+    height: auto;
+    border-radius: 4px 4px 0 0;
+    }
+    
+    .card h3 {
+    font-size: 24px;
+    color: #333;
+    margin: 0 0 10px;
+    }
+    
+    .card p {
+    font-size: 18px;
+    color: #555;
+    margin: 0;
+    }
+    
+    .card:hover {
+    background-color: #f8f8f8;
+    }
+    
+    .card .button {
+    /* button styles */
+    }
+    
+    .card .button:hover {
+    /* hover styles */
+    }
